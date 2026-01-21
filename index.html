@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generador de QR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Generador de Código QR</h1>
+    <input id="texto" type="text" placeholder="Escribe URL o texto…" autocomplete="off" />
+    <button id="btn">Generar QR</button>
+    <div id="canvas-wrapper">
+      <canvas id="qr"></canvas>
+    </div>
+    <a id="descargar" class="hidden">Descargar PNG</a>
+  </main>
+
+  <!-- Librería liviana (7 kB) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
